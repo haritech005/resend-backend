@@ -19,7 +19,7 @@ export default async (req, res) => {
       to: 'j.hariharan005@gmail.com',
       subject: `New message from ${name}`,
       reply_to: email,
-      text: message,
+      text: "email : "+ email +"<br> message : " + message,
     });
 
     return res.status(200).json({ success: true, data });
